@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacingx2 $spacingx1;
+  height: 80px;
+  text-align: center;
+  color: $colorClear;
+  background-color: $colorPrincipal;
+}
+
+.social {
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    margin-right: $spacingx1;
+  }
+}
+
+.data {
+  &__title {
+    margin-bottom: 0px;
+  }
+  &__link {
+    color: $colorClear;
+    text-decoration: none;
+    font-size: $fontText;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+}

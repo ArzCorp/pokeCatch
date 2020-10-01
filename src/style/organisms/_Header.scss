@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: $spacingMin $spacingx1;
+  background-color: $colorPrincipal;
+  &__logo {
+    margin: 0px;
+  }
+}
+
+.navbar-header {
+  &__container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: $spacingx2;
+    color: $colorClear;
+  }
+  &__item_image {
+    margin: 0px;
+  }
+}

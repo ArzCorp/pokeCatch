@@ -17,5 +17,10 @@
     "plugins": [
         "react"
     ],
-    "rules": {}
+    "rules": {
+        "import/prefer-default-export": 0,
+        "react/prop-types": 0,
+        "max-len": 0,
+        "eslint(jsx-a11y/control-has-associated-label)": 0
+    }
 }

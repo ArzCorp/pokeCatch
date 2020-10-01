@@ -1,0 +1,36 @@
+.main-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: calc(100vh - 180px);
+  background-image: url('https://i.ibb.co/gvsCfLS/grass2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__buttons {
+    margin: 0 auto;
+    margin-bottom: $spacingx3;
+  }
+  &__pokemon{
+    margin: 0 auto;;
+  }
+}
+
+.pokemon {
+  &__image-container {
+    width: 280px;
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-pokemon {
+    height: calc(100vh - 200px);
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

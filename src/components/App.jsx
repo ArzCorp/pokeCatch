@@ -4,8 +4,8 @@ import { Route } from 'react-router';
 
 import '../style/Style.scss';
 
-import PokemonCatch from '../pages/pokemonCatch';
-import Pokedex from '../pages/pokedex';
+import PokemonCatch from '../pages/PokemonCatch';
+import Pokedex from '../pages/Pokedex';
 
 const App = () => (
   <BrowserRouter>

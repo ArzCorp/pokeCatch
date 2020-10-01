@@ -1,21 +1,18 @@
-@import './Global.scss';
-
 @import './tokens/Color.scss';
 @import './tokens/Font.scss';
 @import './tokens/Spacing.scss';
+
+@import './Global.scss';
 
 @import './atoms/Button.scss';
 @import './atoms/Icon.scss';
 
 @import './molecules/Modal.scss';
 @import './molecules/Navbar.scss';
-@import './molecules/PokemonImage.scss';
-@import './molecules/PokemonName.scss';
 @import './molecules/SocialMedia.scss';
 
 @import './organisms/Footer.scss';
 @import './organisms/Header.scss';
-@import './organisms/PokedexFigure.scss';
 
 @import './pages/Pokedex.scss';
 @import './pages/PokemonCatch.scss';

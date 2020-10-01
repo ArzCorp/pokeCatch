@@ -1,0 +1,69 @@
+.modal {
+  &__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorDarkTransparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  & h1 {
+    margin-bottom: 0px;
+  }
+  & p {
+    margin-top: 0px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  color: $colorPrincipal;
+  position: relative;
+  background-color: $colorClear;
+  &__border-top {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  background-color: $colorPass;
+  }
+  &__border-bottom {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: $colorPass;
+  }
+  &__buttons {
+    display: flex;
+    & a {
+      display: flex;
+      justify-content: center;
+      font-size: inherit;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .modal {
+    width: 320px;
+    &__buttons {
+      justify-content: center;
+      & .btn--normal {
+        margin: 0px;
+      }
+      & .btn--danger {
+        margin-right: $spacingx1;
+      }
+    }
+  }
+}

@@ -2,6 +2,33 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: $fontTitle;
+}
+
+h2 {
+  font-size: $fontSubtitle;
+}
+
+p {
+  font-size: $fontText;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+figure {
+  margin: 0px;
 }
 
 .icon--small {
@@ -14,4 +41,44 @@ html {
 
 .icon--extra_large {
   width: 35px;
+}
+
+.btn--danger {
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  background-color: $colorSecondary;
+  color: $colorClear;
+  font-size: $fontTitle;
+  font-weight: bold;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-right: $spacingx3;
+  cursor: pointer;
+}
+
+.btn--normal {
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  background-color: $colorPrincipal;
+  color: $colorClear;
+  font-size: $fontTitle;
+  font-weight: bold;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-right: $spacingx3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .btn--danger {
+    width: 150px;
+    margin-right: 0px;
+  }
+
+  .btn--normal {
+    width: 150px;
+    margin-right: $spacingx2;
+  }
 }
